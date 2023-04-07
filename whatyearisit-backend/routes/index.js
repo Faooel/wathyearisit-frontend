@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/date', (req, res) => {
   const date = new Date();
-  res.json({ now: date });
+  res.json({ now: date.getFullYear() });
 });
 
 module.exports = router;
